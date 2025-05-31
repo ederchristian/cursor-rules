@@ -19,7 +19,7 @@ A minimal and opinionated `.cursor/rules` template for **Next.js + TypeScript** 
 
 - Architecture guidelines
 - Codebase structure
-- Coding standards (with personal preferences, e.g. `item ? item : null`)
+- Coding standards (with personal preferences)
 - Testing best practices
 - Optional MCP integrations
 - Project overview
