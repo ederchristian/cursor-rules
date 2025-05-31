@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: MCP integrations (optional)
+globs:
+  - .mcp.json
+  - src/**
+  - app/**
+alwaysApply: false
+---
+
+- Configure `.mcp.json` if MCP is used.
+- Document available integrations (Context7, Postgres, etc).

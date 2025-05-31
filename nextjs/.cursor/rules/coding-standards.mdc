@@ -1,0 +1,31 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Coding standards for Next.js + TypeScript projects
+globs:
+  - src/**
+  - app/**
+  - pages/**
+  - package.json
+  - tsconfig.json
+  - next.config.js
+  - next.config.mjs
+alwaysApply: true
+---
+
+- Use TypeScript with strict mode (`noImplicitAny`, `strictNullChecks`).
+- React 18 functional components and hooks.
+- Prefer `item ? item : null` over `item && item`.
+- Use absolute imports (`~/`) if configured.
+- Naming:
+  - PascalCase for components and types.
+  - camelCase for variables, functions, hooks.
+  - kebab-case for file names (except components in PascalCase).
+- Styling:
+  - Use Stitches.
+  - Mobile-first.
+  - Use variants.
+- Avoid unnecessary `useEffect`. Use `useMemo` and `useCallback` when needed.

@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Architecture guidelines for Next.js + TypeScript projects
+globs:
+  - src/**
+  - app/**
+  - pages/**
+  - next.config.js
+  - next.config.mjs
+alwaysApply: true
+---
+
+- Use feature-based folder organization.
+- Suggested structure:
+  - `app/` (preferred, App Router) or `pages/` if using Pages Router.
+  - `components/` — reusable UI components.
+  - `features/` — feature-specific logic (optional).
+  - `queries/` — API data fetching with Tanstack Query.
+  - `schemas/` — Zod schemas.
+  - `utils/` — utility functions and hooks.
+  - `contexts/` — React Contexts and providers.
+  - `hooks/` — reusable hooks.
+- Use Radix UI components for accessible UI.
+- Use Stitches for styling.

@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Codebase structure and organization
+globs:
+  - src/**
+  - app/**
+  - pages/**
+  - package.json
+  - tsconfig.json
+  - next.config.js
+  - next.config.mjs
+alwaysApply: true
+---
+
+- Main structure:
+  - `app/` or `pages/` — routing.
+  - `components/` — reusable UI components.
+  - `features/` — optional, for feature logic.
+  - `queries/` — API fetching.
+  - `schemas/` — Zod validation.
+  - `utils/` — utilities.
+  - `contexts/` — contexts and providers.
+  - `hooks/` — reusable hooks.
+- Co-locate tests (`*.spec.tsx`) next to components.

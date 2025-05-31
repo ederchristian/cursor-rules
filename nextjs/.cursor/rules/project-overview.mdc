@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Project overview and technology stack
+globs:
+  - src/**
+  - app/**
+  - package.json
+  - next.config.js
+  - next.config.mjs
+alwaysApply: true
+---
+
+- Core stack:
+  - Next.js 14+ (App Router preferred).
+  - React 18.
+  - TypeScript (strict).
+  - Vite (if using Turbo or Vitest).
+  - Radix UI.
+  - Stitches.
+  - Tanstack Query.
+  - Zod.
+  - React Hook Form.
+  - React Testing Library + Vitest.
+  - Playwright for E2E tests.
+- Architecture:
+  - Component-based.
+  - Mobile-first responsive design.
+  - Clean state management.
+  - Co-located tests.
