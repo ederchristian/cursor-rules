@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Codebase structure and organization
+globs:
+  - lib/**
+  - test/**
+  - config/**
+  - mix.exs
+  - mix.lock
+alwaysApply: true
+---
+
+- Main structure:
+  - `lib/my_app/` — domain logic, Ecto schemas, business rules.
+  - `lib/my_app_web/` — web layer (controllers, channels, views).
+  - `config/` — environment configs.
+  - `test/` — ExUnit tests.
+- Separate Contexts by domain.
+- Avoid large, monolithic modules.
+- Prefer clear naming: `MyApp.Accounts`, `MyApp.Billing`, etc.

@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: Testing guidelines and patterns
+globs:
+  - test/**
+  - lib/**
+alwaysApply: true
+---
+
+- Use ExUnit.
+- Tests live in `test/`, mirror structure of `lib/`.
+- Follow Testing Pyramid:
+  - Unit tests for core domain logic.
+  - Integration tests for Ecto and DB.
+  - Controller/endpoint tests for web layer.
+- Prefer descriptive test names.
+- Use `setup` blocks for test preparation.
+- Avoid test coupling.
+- Use factories (with ExMachina or similar) as needed.
+- Test critical business logic first.

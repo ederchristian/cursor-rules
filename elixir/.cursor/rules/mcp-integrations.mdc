@@ -1,0 +1,16 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: MCP integrations (optional)
+globs:
+  - .mcp.json
+  - lib/**
+  - test/**
+alwaysApply: false
+---
+
+- Configure `.mcp.json` if using MCP integrations.
+- Optional — not required for most Elixir projects.

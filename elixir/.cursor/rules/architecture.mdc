@@ -1,0 +1,23 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Architecture guidelines for Elixir + Phoenix projects
+globs:
+  - lib/**
+  - test/**
+  - config/**
+  - mix.exs
+  - mix.lock
+alwaysApply: true
+---
+
+- Use Phoenix Contexts to separate domain logic:
+  - `lib/my_app/` — core domain.
+  - `lib/my_app_web/` — web layer (controllers, views, live views, templates).
+- Ecto schemas live in `lib/my_app/` under appropriate context modules.
+- Tests live in `test/` and follow ExUnit conventions.
+- Prefer small, focused modules.
+- Follow community conventions (https://hexdocs.pm/phoenix/contexts.html).

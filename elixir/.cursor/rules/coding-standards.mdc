@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Coding standards for Elixir + Phoenix projects
+globs:
+  - lib/**
+  - test/**
+  - config/**
+  - mix.exs
+alwaysApply: true
+---
+
+- Use Elixir style guide (https://github.com/christopheradams/elixir_style_guide).
+- Pipe first, then pattern match:
+  - Prefer pipelines when transforming data.
+- Use descriptive, explicit function names.
+- Avoid overusing anonymous functions.
+- Document public functions with `@doc`.
+- Group related functions together.
+- Follow community conventions for naming and module structure.
+- Use Credo to enforce style and consistency.
