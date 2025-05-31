@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: MCP integrations (optional, adjust per project)
+globs:
+  - .mcp.json
+  - src/**
+alwaysApply: false
+---
+
+- Configure `.mcp.json` if using MCP features.
+- Document available MCP integrations.
+- Example: Context7 for docs, Postgres queries, etc.
+- Optional — use only if project integrates with MCP.

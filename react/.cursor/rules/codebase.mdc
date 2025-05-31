@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Codebase structure and organization
+globs:
+  - src/**
+  - package.json
+  - tsconfig.json
+  - vite.config.ts
+alwaysApply: true
+---
+
+- Main directories:
+  - `components/` — reusable components.
+  - `pages/` — page/feature components.
+  - `queries/` — API fetching.
+  - `schemas/` — Zod validation.
+  - `utils/` — utilities.
+  - `contexts/` — context providers.
+  - `hooks/` — custom hooks.
+- Keep files small and focused.
+- Co-locate tests next to components (`*.spec.tsx`).

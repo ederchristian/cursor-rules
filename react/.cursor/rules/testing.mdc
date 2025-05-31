@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: Testing guidelines and patterns
+globs:
+  - src/**/*.spec.tsx
+  - src/**/*.test.tsx
+  - src/components/**
+  - src/pages/**
+  - e2e/**
+  - vitest.config.ts
+alwaysApply: true
+---
+
+- Use React Testing Library and Vitest.
+- Follow Testing Library guiding principles:
+  - Test user behavior, not implementation details.
+  - Use accessible queries first (`getByRole`, `getByLabelText`).
+  - Avoid relying on `data-testid` unless necessary.
+  - Prefer `waitFor` over hardcoded delays.
+  - Co-locate tests with components.
+  - Write descriptive test names (user scenarios).
+- Use Playwright for E2E tests.
+- Coverage:
+  - Test forms with actual validation (Zod).
+  - Test complex interactions (Radix components, modals, dropdowns).
+  - Test stateful components (with React Contexts when needed).

@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Project overview and technology stack
+globs:
+  - src/**
+  - package.json
+  - vite.config.ts
+alwaysApply: true
+---
+
+- Core stack:
+  - React 18 (functional components and hooks).
+  - TypeScript (strict).
+  - Vite (build and dev tooling).
+  - Radix UI for accessible UI components.
+  - Stitches for CSS-in-JS styling.
+  - Tanstack Query for API data fetching.
+  - Zod for schema validation.
+  - React Hook Form for forms.
+  - React Testing Library + Vitest for testing.
+  - Playwright for E2E tests.
+- Architecture:
+  - Component-based.
+  - Mobile-first responsive design.
+  - Clean state management.
+  - Co-located tests.

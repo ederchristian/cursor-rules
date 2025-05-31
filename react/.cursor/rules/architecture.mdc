@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Architecture guidelines for React + TypeScript projects
+globs:
+  - src/**
+  - vite.config.ts
+alwaysApply: true
+---
+
+- Use feature-based folder organization.
+- Suggested top-level structure under `src/`:
+  - `components/` — reusable UI components.
+  - `pages/` — feature/page-specific components.
+  - `queries/` — API data fetching with Tanstack Query.
+  - `schemas/` — Zod schemas.
+  - `utils/` — utility functions and custom hooks.
+  - `contexts/` — React Contexts and providers.
+  - `hooks/` — reusable custom hooks.
+- Use Radix UI components for accessible UI primitives.
+- Use Stitches for styling.

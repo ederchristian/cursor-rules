@@ -1,0 +1,31 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Coding standards for React + TypeScript
+globs:
+  - src/**
+  - package.json
+  - tsconfig.json
+  - vite.config.ts
+alwaysApply: true
+---
+
+- Use TypeScript with strict mode (`noImplicitAny`, `strictNullChecks`).
+- Use React 18 functional components and hooks.
+- Prefer `item ? item : null` instead of `item && item`.
+- Use absolute imports via `~/` if configured.
+- Naming:
+  - PascalCase for components and types.
+  - camelCase for variables, functions, and hooks.
+  - kebab-case for file names (except components in PascalCase).
+- Styling:
+  - Use Stitches.
+  - Mobile-first.
+  - Use variants.
+- Testing:
+  - React Testing Library + Vitest.
+  - Follow Testing Library principles.
+- Avoid overuse of `useEffect`. Use `useMemo` and `useCallback` when needed.
