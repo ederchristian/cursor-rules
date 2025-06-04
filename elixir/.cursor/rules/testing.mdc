@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: Testing guidelines and patterns
 globs:
   - test/**

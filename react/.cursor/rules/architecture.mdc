@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: true
----
----
 description: Architecture guidelines for React + TypeScript projects
 globs:
   - src/**

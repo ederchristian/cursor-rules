@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: true
----
----
 description: Project overview and technology stack
 globs:
   - lib/**

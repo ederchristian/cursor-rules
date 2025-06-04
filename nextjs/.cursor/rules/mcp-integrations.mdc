@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: MCP integrations (optional)
 globs:
   - .mcp.json
