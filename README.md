@@ -6,6 +6,7 @@ Currently includes:
 
 - React + TypeScript
 - Next.js + TypeScript
+- React Native + TypeScript
 - Elixir + Phoenix + Ecto
 
 ## Work in progress
