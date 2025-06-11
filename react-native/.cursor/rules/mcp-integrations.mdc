@@ -1,0 +1,13 @@
+---
+description: Optional MCP integrations for React Native projects with mobile-specific features
+globs:
+  - ".mcp.json"
+  - "mcp.config.*"
+alwaysApply: false
+---
+
+- Configure `.mcp.json` if using MCP features.
+- Document available MCP integrations.
+- Example: Context7 for docs, mobile-specific APIs, device features, etc.
+- Optional — use only if project integrates with MCP.
+- Consider mobile-specific integrations (device sensors, camera, location).

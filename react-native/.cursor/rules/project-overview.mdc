@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+---
+description: React Native project tech stack overview and architecture principles
+globs: 
+  - "package.json"
+  - "app.json"
+  - "expo.json"
+  - "metro.config.js"
+  - "babel.config.js"
+alwaysApply: true
+---
+
+- Core stack:
+  - React Native 0.72+ (functional components and hooks).
+  - TypeScript (strict mode).
+  - Expo (preferred) or Metro bundler.
+  - React Navigation for navigation.
+  - React Native Elements or NativeBase for UI components.
+  - Zustand or React Query for state management.
+  - Zod for schema validation.
+  - React Hook Form for forms.
+  - React Native Testing Library + Jest for testing.
+  - Detox for E2E tests (optional).
+- Development tools:
+  - ESLint + Prettier for code formatting.
+  - Flipper for debugging (React Native CLI).
+  - Expo Dev Tools (Expo projects).
+- Architecture:
+  - Component-based with feature organization.
+  - Clean separation of concerns.
+  - Performance-focused (lists, images, navigation).
+  - Platform-agnostic with targeted optimizations.

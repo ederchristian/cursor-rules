@@ -1,0 +1,24 @@
+---
+description: React Native codebase structure and file organization standards
+globs:
+  - "src/**"
+  - "app/**"
+  - "*.tsx"
+  - "*.ts"
+alwaysApply: true
+---
+
+- Main directories:
+  - `components/` — reusable components.
+  - `screens/` — screen/page components.
+  - `navigation/` — navigation setup.
+  - `services/` — API and external services.
+  - `hooks/` — custom hooks.
+  - `utils/` — utilities and helpers.
+  - `contexts/` — context providers.
+  - `types/` — TypeScript definitions.
+  - `constants/` — app constants.
+- Keep files small and focused.
+- Co-locate tests next to components (`*.spec.tsx` or `*.test.tsx`).
+- Use index files for clean imports.
+- Separate business logic from UI components.

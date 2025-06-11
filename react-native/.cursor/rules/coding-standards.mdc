@@ -1,0 +1,31 @@
+---
+description: React Native coding standards, TypeScript usage, and style conventions
+globs:
+  - "**/*.tsx"
+  - "**/*.ts"
+  - "**/*.js"
+  - "**/*.jsx"
+alwaysApply: true
+---
+
+- Use TypeScript with strict mode (`noImplicitAny`, `strictNullChecks`).
+- Use React Native functional components and hooks.
+- Prefer `item ? item : null` instead of `item && item`.
+- Use absolute imports with path mapping (e.g., `@/components`).
+- Naming:
+  - PascalCase for components and types.
+  - camelCase for variables, functions, and hooks.
+  - kebab-case for file names (except components in PascalCase).
+- Styling:
+  - Use StyleSheet.create() for performance.
+  - Prefer Flexbox for layouts.
+  - Use consistent spacing and sizing tokens.
+  - Consider platform differences (iOS vs Android).
+- Performance:
+  - Use FlatList/SectionList for large lists.
+  - Optimize images with proper dimensions and formats.
+  - Use useMemo and useCallback judiciously.
+- Testing:
+  - React Native Testing Library + Jest.
+  - Follow Testing Library principles.
+- Avoid overuse of useEffect. Use proper dependencies arrays.

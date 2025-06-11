@@ -1,0 +1,25 @@
+---
+description: React Native project architecture and folder organization guidelines
+globs:
+  - "src/**"
+  - "app/**"
+  - "components/**"
+  - "screens/**"
+  - "navigation/**"
+alwaysApply: true
+---
+
+- Use feature-based folder organization.
+- Suggested top-level structure under `src/`:
+  - `components/` — reusable UI components.
+  - `screens/` — screen/page components.
+  - `navigation/` — navigation configuration and navigators.
+  - `services/` — API calls and external service integrations.
+  - `hooks/` — custom hooks and business logic.
+  - `utils/` — utility functions and helpers.
+  - `contexts/` — React Contexts and providers.
+  - `types/` — TypeScript type definitions.
+  - `constants/` — app constants and configuration.
+- Use React Navigation for navigation (Stack, Tab, Drawer).
+- Use React Native Elements, NativeBase, or custom styled components for UI.
+- Separate platform-specific code using `.ios.tsx` and `.android.tsx` extensions when needed.

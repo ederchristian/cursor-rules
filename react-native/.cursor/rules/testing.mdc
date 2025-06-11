@@ -1,0 +1,30 @@
+---
+description: React Native testing guidelines using Testing Library, Jest, and E2E testing
+globs:
+  - "**/*.test.tsx"
+  - "**/*.test.ts"
+  - "**/*.spec.tsx"
+  - "**/*.spec.ts"
+  - "__tests__/**"
+  - "e2e/**"
+alwaysApply: true
+---
+
+- Use React Native Testing Library and Jest.
+- Follow Testing Library guiding principles:
+  - Test user behavior, not implementation details.
+  - Use accessible queries first (`getByRole`, `getByLabelText`, `getByText`).
+  - Avoid relying on `testID` unless necessary.
+  - Prefer `waitFor` over hardcoded delays.
+  - Co-locate tests with components.
+  - Write descriptive test names (user scenarios).
+- Use Detox for E2E tests (optional but recommended for critical flows).
+- Platform-specific testing:
+  - Test on both iOS and Android when possible.
+  - Use platform-specific test files when needed.
+- Coverage:
+  - Test navigation flows and screen transitions.
+  - Test forms with actual validation (Zod).
+  - Test complex interactions (modals, gestures, lists).
+  - Test stateful components (with React Contexts when needed).
+  - Mock native modules and external dependencies appropriately.
